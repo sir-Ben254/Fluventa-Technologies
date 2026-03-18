@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fluventa Technologies - Adaptive Digital Solutions in Nairobi, Kenya. Web Development, UI/UX Design, SEO, Automation & Branding.">
+    <meta name="keywords" content="digital agency, web development, UI/UX design, SEO, branding, Nairobi, Kenya">
+    <meta name="author" content="Fluventa Technologies">
+    <meta name="theme-color" content="#0f172a">
+    
+    <title>Fluventa Technologies | Adaptive Digital Solutions</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">
+                    <i data-lucide="zap"></i>
+                </span>
+                <span class="logo-text">Fluventa</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Work</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="#home" class="logo" onclick="closeMobileMenu()">
+                    <span class="logo-icon">
+                        <i data-lucide="zap"></i>
+                    </span>
+                    <span class="logo-text">Fluventa</span>
+                </a>
+                <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-links">
+                <a href="#home" class="mobile-link" onclick="closeMobileMenu()">Home</a>
+                <a href="#about" class="mobile-link" onclick="closeMobileMenu()">About</a>
+                <a href="#services" class="mobile-link" onclick="closeMobileMenu()">Services</a>
+                <a href="#portfolio" class="mobile-link" onclick="closeMobileMenu()">Work</a>
+                <a href="#pricing" class="mobile-link" onclick="closeMobileMenu()">Pricing</a>
+                <a href="#contact" class="mobile-link" onclick="closeMobileMenu()">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-primary mobile-cta" onclick="closeMobileMenu()">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge animate-on-load">
+                <span class="badge-dot"></span>
+                <span>Accepting New Projects</span>
+            </div>
+            
+            <h1 class="hero-title animate-on-load">
+                We Build Digital<br>
+                <span class="gradient-text">Experiences</span> That<br>
+                Adapt, Scale, Convert
+            </h1>
+            
+            <p class="hero-subtitle animate-on-load">
+                Transform your business with cutting-edge web solutions, immersive designs, 
+                and data-driven strategies. Based in Nairobi, serving clients globally.
+            </p>
+            
+            <div class="hero-ctas animate-on-load">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    <i data-lucide="rocket"></i>
+                    Get Started
+                </a>
+                <a href="#portfolio" class="btn btn-outline btn-lg">
+                    <i data-lucide="eye"></i>
+                    View Our Work
+                </a>
+            </div>
+            
+            <div class="hero-stats animate-on-load">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span>
+                    <span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Innovating Digital<br>Transformation</h2>
+                <p class="section-subtitle">
+                    We're a team of passionate digital craftsmen dedicated to building 
+                    exceptional online experiences that drive real business results.
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="droplet"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses with adaptive digital solutions that evolve with technology and user needs, creating lasting impact in the digital landscape.</p>
+                    </div>
+                    
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be Africa's leading digital innovation partner, bridging the gap between local ambition and global excellence.</p>
+                    </div>
+                    
+                    <div class="about-card glass-card">
+                        <div class="about-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Innovation, integrity, and client success drive everything we do. We believe in transparent partnerships and measurable outcomes.</p>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=700&fit=crop" alt="Team collaboration" loading="lazy">
+                        </div>
+                        <div class="about-image-accent"></div>
+                    </div>
+                    
+                    <div class="about-floating-card glass-card">
+                        <i data-lucide="award" class="floating-icon"></i>
+                        <div>
+                            <span class="floating-number">5+</span>
+                            <span class="floating-label">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title">Comprehensive<br>Digital Solutions</h2>
+                <p class="section-subtitle">
+                    End-to-end digital services tailored to elevate your brand and accelerate growth.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card glass-card" data-service="webdev">
+                    <div class="service-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites and web applications built with modern technologies for optimal performance and scalability.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Responsive Websites</li>
+                        <li><i data-lucide="check"></i> E-commerce Solutions</li>
+                        <li><i data-lucide="check"></i> Web Applications</li>
+                        <li><i data-lucide="check"></i> API Development</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card glass-card" data-service="uiux">
+                    <div class="service-icon">
+                        <i data-lucide="palette"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered designs that blend aesthetics with functionality for exceptional digital experiences.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> User Research</li>
+                        <li><i data-lucide="check"></i> Wireframing & Prototyping</li>
+                        <li><i data-lucide="check"></i> Visual Design</li>
+                        <li><i data-lucide="check"></i> Design Systems</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card glass-card" data-service="seo">
+                    <div class="service-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>SEO & Digital Marketing</h3>
+                    <p>Data-driven strategies to improve your visibility, drive traffic, and convert visitors into customers.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> SEO Optimization</li>
+                        <li><i data-lucide="check"></i> Content Marketing</li>
+                        <li><i data-lucide="check"></i> Social Media</li>
+                        <li><i data-lucide="check"></i> PPC Advertising</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card glass-card" data-service="automation">
+                    <div class="service-icon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <h3>Business Automation</h3>
+                    <p>Streamline operations and boost productivity with intelligent automation solutions.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Workflow Automation</li>
+                        <li><i data-lucide="check"></i> CRM Integration</li>
+                        <li><i data-lucide="check"></i> Chatbots</li>
+                        <li><i data-lucide="check"></i> Data Analytics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card glass-card" data-service="branding">
+                    <div class="service-icon">
+                        <i data-lucide="pen-tool"></i>
+                    </div>
+                    <h3>Branding & Identity</h3>
+                    <p>Compelling brand identities that resonate with your audience and set you apart from competitors.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Logo Design</li>
+                        <li><i data-lucide="check"></i> Brand Strategy</li>
+                        <li><i data-lucide="check"></i> Visual Identity</li>
+                        <li><i data-lucide="check"></i> Brand Guidelines</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        <span>Learn More</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Process</span>
+                <h2 class="section-title">How We<br>Deliver Excellence</h2>
+                <p class="section-subtitle">
+                    A proven methodology ensures every project achieves its full potential.
+                </p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-step="1">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <h3>Discover</h3>
+                        <p>We dive deep into understanding your business, goals, target audience, and competitive landscape.</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-step="2">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i data-lucide="pen-tool"></i>
+                        </div>
+                        <h3>Design</h3>
+                        <p>Our creative team crafts intuitive designs and strategic concepts aligned with your brand vision.</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-step="3">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Develop</h3>
+                        <p>We bring designs to life with clean, performant code using cutting-edge technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-step="4">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <h3>Deploy</h3>
+                        <p>Your project goes live with thorough testing, optimization, and seamless deployment.</p>
+                    </div>
+                </div>
+                
+                <div class="process-connector"></div>
+                
+                <div class="process-step" data-step="5">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i data-lucide="trending-up"></i>
+                        </div>
+                        <h3>Scale</h3>
+                        <p>We provide ongoing support and optimization to ensure continued growth and success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured<br>Projects</h2>
+                <p class="section-subtitle">
+                    A showcase of our recent work delivering exceptional digital experiences.
+                </p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-project="1">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-commerce Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">E-commerce</span>
+                                <h3>ShopFlow Africa</h3>
+                                <p>Full-stack e-commerce platform with payment integration</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Stripe</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="2">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="FinTech Dashboard" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">FinTech</span>
+                                <h3>Kenya Bank Plus</h3>
+                                <p>Mobile banking dashboard with real-time analytics</p>
+                                <div class="portfolio-tech">
+                                    <span>Vue.js</span>
+                                    <span>D3.js</span>
+                                    <span>Firebase</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="3">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Healthcare App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">Healthcare</span>
+                                <h3>MedConnect KE</h3>
+                                <p>Telemedicine platform connecting patients with doctors</p>
+                                <div class="portfolio-tech">
+                                    <span>React Native</span>
+                                    <span>Python</span>
+                                    <span>Twilio</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="4">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop" alt="Real Estate Platform" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">Real Estate</span>
+                                <h3>PropertyHub EA</h3>
+                                <p>Property listing platform with virtual tours</p>
+                                <div class="portfolio-tech">
+                                    <span>Next.js</span>
+                                    <span>Three.js</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="5">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&h=400&fit=crop" alt="Restaurant App" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">Food & Dining</span>
+                                <h3>Crave Nairobi</h3>
+                                <p>Food delivery app with restaurant management</p>
+                                <div class="portfolio-tech">
+                                    <span>Flutter</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-project="6">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=600&h=400&fit=crop" alt="SaaS Dashboard" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-overlay-content">
+                                <span class="portfolio-category">SaaS</span>
+                                <h3>StaffFlow HR</h3>
+                                <p>Human resources management system</p>
+                                <div class="portfolio-tech">
+                                    <span>React</span>
+                                    <span>TypeScript</span>
+                                    <span>AWS</span>
+                                </div>
+                                <button class="btn btn-outline portfolio-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients<br>Say About Us</h2>
+                <p class="section-subtitle">
+                    Real feedback from partners who've transformed their digital presence.
+                </p>
+            </div>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="James Kariuki">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>James Kariuki</h4>
+                                <span>CEO, ShopFlow Africa</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Fluventa transformed our online presence completely. Our sales increased by 300% within three months of launching the new e-commerce platform. Their attention to detail and strategic approach is unmatched."</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah Wanjiku">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Wanjiku</h4>
+                                <span>Marketing Director, Kenya Bank Plus</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The team at Fluventa delivered beyond our expectations. Their UI/UX expertise created a banking experience that our customers love. The dashboard analytics have helped us make data-driven decisions."</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Dr. Michael Ochieng">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Dr. Michael Ochieng</h4>
+                                <span>Founder, MedConnect KE</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Fluventa built a telemedicine platform that has connected thousands of patients with doctors during the pandemic. Their understanding of healthcare requirements and technical excellence made all the difference."</p>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Grace Atieno">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Grace Atieno</h4>
+                                <span>Director, PropertyHub EA</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                                <i data-lucide="star"></i>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"The virtual tour feature Fluventa implemented revolutionized how we showcase properties. Our leads increased by 250% and the platform handles traffic beautifully. Exceptional work!"</p>
+                    </div>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <button class="testimonial-dot active" data-index="0"></button>
+                    <button class="testimonial-dot" data-index="1"></button>
+                    <button class="testimonial-dot" data-index="2"></button>
+                    <button class="testimonial-dot" data-index="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2 class="section-title">Transparent<br>Pricing Plans</h2>
+                <p class="section-subtitle">
+                    Choose the perfect package for your business needs. All plans include dedicated support.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Starter</span>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">KSh</span>
+                            <span class="pricing-amount">150,000</span>
+                            <span class="pricing-period">/project</span>
+                        </div>
+                        <p class="pricing-desc">Perfect for small businesses and startups</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> 5-Page Website</li>
+                        <li><i data-lucide="check"></i> Responsive Design</li>
+                        <li><i data-lucide="check"></i> Basic SEO</li>
+                        <li><i data-lucide="check"></i> Contact Form</li>
+                        <li><i data-lucide="check"></i> Social Media Links</li>
+                        <li><i data-lucide="check"></i> 1 Month Support</li>
+                        <li class="disabled"><i data-lucide="x"></i> CMS Integration</li>
+                        <li class="disabled"><i data-lucide="x"></i> E-commerce</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline pricing-btn">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured glass-card">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Professional</span>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">KSh</span>
+                            <span class="pricing-amount">350,000</span>
+                            <span class="pricing-period">/project</span>
+                        </div>
+                        <p class="pricing-desc">Ideal for growing businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> 10-Page Website</li>
+                        <li><i data-lucide="check"></i> Custom UI/UX Design</li>
+                        <li><i data-lucide="check"></i> Advanced SEO</li>
+                        <li><i data-lucide="check"></i> Contact Form + Chat</li>
+                        <li><i data-lucide="check"></i> Social Media Integration</li>
+                        <li><i data-lucide="check"></i> CMS Integration</li>
+                        <li><i data-lucide="check"></i> Basic E-commerce (10 products)</li>
+                        <li><i data-lucide="check"></i> 3 Months Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary pricing-btn">Get Started</a>
+                </div>
+                
+                <div class="pricing-card glass-card">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Enterprise</span>
+                        <div class="pricing-price">
+                            <span class="pricing-currency">Custom</span>
+                        </div>
+                        <p class="pricing-desc">For large organizations with complex needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check"></i> Unlimited Pages</li>
+                        <li><i data-lucide="check"></i> Premium UI/UX</li>
+                        <li><i data-lucide="check"></i> Full SEO Package</li>
+                        <li><i data-lucide="check"></i> Advanced Animations</li>
+                        <li><i data-lucide="check"></i> Full E-commerce</li>
+                        <li><i data-lucide="check"></i> Custom Integrations</li>
+                        <li><i data-lucide="check"></i> API Development</li>
+                        <li><i data-lucide="check"></i> 6 Months Priority Support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline pricing-btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's Start<br>Your Project</h2>
+                <p class="section-subtitle">
+                    Ready to transform your digital presence? Get in touch with us today.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Westlands Business Avenue<br>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+254 712 345 678</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@fluventa.co.ke</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/254712345678?text=Hi%20Fluventa,%20I'm%20interested%20in%20your%20services" target="_blank" class="whatsapp-link">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808996225096!2d36.8019!3d-1.2644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f171a5c9e2d3d%3A0x4e2e2e2e2e2e2e2e!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1640000000000!5m2!1sen!2ske" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass-card">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="ui-ux-design">UI/UX Design</option>
+                                <option value="seo-marketing">SEO & Digital Marketing</option>
+                                <option value="automation">Business Automation</option>
+                                <option value="branding">Branding & Identity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg form-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader">
+                                <i data-lucide="loader-2"></i>
+                            </span>
+                            <i data-lucide="send" class="btn-icon"></i>
+                        </button>
+                        
+                        <div class="form-success">
+                            <i data-lucide="check-circle"></i>
+                            <p>Message sent successfully! We'll get back to you soon.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">
+                            <i data-lucide="zap"></i>
+                        </span>
+                        <span class="logo-text">Fluventa</span>
+                    </a>
+                    <p>Adaptive Digital Solutions that transform businesses and drive growth. Based in Nairobi, serving clients across Africa and globally.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">SEO & Marketing</a></li>
+                        <li><a href="#services">Business Automation</a></li>
+                        <li><a href="#services">Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>Westlands, Nairobi</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>+254 712 345 678</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>hello@fluventa.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fluventa Technologies. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open chat">
+            <i data-lucide="message-circle"></i>
+            <span class="chatbot-pulse"></span>
+        </button>
+        
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i data-lucide="bot"></i>
+                </div>
+                <div>
+                    <h4>Fluventa Bot</h4>
+                    <span>Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbot-close">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="chatbot-messages">
+                <div class="chatbot-message bot">
+                    <p>Hi there! 👋 I'm Fluventa's AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" placeholder="Type your message..." id="chatbot-input">
+                <button id="chatbot-send">
+                    <i data-lucide="send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
