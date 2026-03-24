@@ -601,15 +601,29 @@ window.addEventListener('scroll', debounce(() => {
 
 // Initialize reveal animations for sections
 document.addEventListener('DOMContentLoaded', () => {
-    // Add reveal classes to major sections
     const sections = document.querySelectorAll('.about, .services, .process, .portfolio, .testimonials, .pricing, .contact');
     
     sections.forEach(section => {
         section.classList.add('reveal');
     });
     
-    // Trigger initial animation check
-    setTimeout(() => {
-        window.dispatchEvent(new Event('scroll'));
-    }, 100);
+    // Re-query reveal elements after classes are added
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    revealElements.forEach(el => observer.observe(el));
 });
